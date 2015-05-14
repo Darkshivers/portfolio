@@ -4,6 +4,10 @@
 	/*font-family: sans-serif;
 	color: #5f5f5f; */
 }
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  font-size: 20px;
+}
 a {
 	text-decoration: none;
 	color:black;
