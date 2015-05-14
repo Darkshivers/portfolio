@@ -6,4 +6,25 @@
 }
 a {
 	text-decoration: none;
+	color:black;
+}
+
+
+
+/* Navigation */
+
+#nav li {
+
+	display:inline;
+	width:60px;
+
+}
+
+#nav {
+
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:50px;
+	width:25%;
+	
 }
