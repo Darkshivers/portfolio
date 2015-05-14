@@ -28,3 +28,16 @@ a {
 	width:25%;
 	
 }
+
+.jumbotron {
+
+background-image: url("../images/dark_embroidery.png");
+
+
+}
+
+.jumbotron h1, p  {
+
+	color:white;
+
+}
