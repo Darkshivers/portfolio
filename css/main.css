@@ -43,6 +43,11 @@ body {
 /* Temp fix? */
 	color:black;
 	font-family: 'Fira Sans', sans-serif;
+<<<<<<< HEAD
 	padding-left: 10px;
+=======
+	font-size:16px;
+	padding-top:5px;
+>>>>>>> origin/master
 }
 
