@@ -23,7 +23,7 @@ body {
 	margin-top:-20px;
 }
 
-.jumbotron h1, p  {
+.jumbotron::first h1, p  {
 	color:white;
     text-shadow:
     -0px -1px 0 #000,
@@ -39,12 +39,17 @@ body {
 	background-image: url("../images/dark_embroidery.png");
 }
 
-#media{
+#media {
+
 /* Temp fix? */
 	color:black;
 	font-family: 'Fira Sans', sans-serif;
 	padding-left: 10px;
 	font-size:16px;
 	padding-top:5px;
+	
 }
+
+
+
 
