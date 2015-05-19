@@ -6,8 +6,27 @@
 	<meta content="images/favicon.png" itemprop="image">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="images/favicon.ico">
-	<link href='//fonts.googleapis.com/css?family=Fira+Sans:400,500italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,500italic' rel='stylesheet' type='text/css'>
 </head>
+
+
+<script>
+
+$(document).ready(function(){
+           $('li img').on('click',function(){
+                var src = $(this).attr('src');
+                var img = '<img src="' + src + '" class="img-responsive"/>';
+                $('#myModal').modal();
+                $('#myModal').on('shown.bs.modal', function(){
+                    $('#myModal .modal-body').html(img);
+                });
+                $('#myModal').on('hidden.bs.modal', function(){
+                    $('#myModal .modal-body').html('');
+                });
+           });  
+        })
+
+</script>
 
 <!-- Navigation bar begins --> 
 <body>
@@ -45,36 +64,39 @@
 	<p>Navigate to each week above, or select from all our sources below</p>
 </div>
 
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">         
+          <div class="modal-body">                
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
 <div class = "container"> 
 
 
-		<div class="row">
-  <div class="col-xs-6 col-md-3">
-    <a href="#" class="thumbnail" id = "thumbnails">
-      <img src="images/prototype.png" alt="...">
-    </a>
-  </div>
+<ul class="row">
 
-<div class="col-xs-6 col-md-3">
-    <a href="#" class="thumbnail" id = "thumbnails">
-      <img src="images/legobuilding.png" alt="...">
-    </a>
-  </div>
+  <li class="col-xs-6 col-md-3">
+      <img class="img-responsive" src="images/prototype.png"  >
+  </li>
 
-  <div class="col-xs-6 col-md-3">
-    <a href="#" class="thumbnail" id = "thumbnails">
-      <img src="images/wordcloud.png" alt="...">
-    </a>
-  </div>
+<li class="col-xs-6 col-md-3">
+    <img class="img-responsive" src="images/legobuilding.png" alt="..."> 
+</li>
 
-  <div class="col-xs-6 col-md-3" id = "thumbnails">
-    <a href="#" class="thumbnail">
-      <img src="images/survey.png" alt="...">
-    </a>
-  </div>
+  <li class="col-xs-6 col-md-3">
+      <img class="img-responsive" src="images/wordcloud.png" alt="...">
+  </li>
 
+  <li class="col-xs-6 col-md-3" id = "thumbnails">
+      <img class="img-responsive" src="images/survey.png" alt="...">
+  </li>
+  </ul>
 </div>
-	</div> <!-- Container End -->
+	
 
 <div class = "container">
 
@@ -88,12 +110,21 @@
   <article class="media-body">
     <h1 class="media-heading">Week One</h1>
     <div id = "media">
-    	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sapien sapien, feugiat quis dapibus in, dapibus quis mi. In eget urna et neque auctor pulvinar ac a ante. Etiam vel auctor orci, sed porttitor diam. Etiam venenatis eros dictum rhoncus interdum. Aliquam sit amet ligula in libero dignissim venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus non turpis non nisl vulputate accumsan. Quisque id consectetur dui. Morbi pellentesque non mi ac aliquam. Quisque iaculis, lorem egestas scelerisque cursus, est neque finibus magna, nec iaculis nibh nisl et risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis eges.In tincidunt tempor nunc, a pulvinar lectus bibendum vel. Mauris a convallis arcu, nec blandit ipsum
+
+    	The initial week we began planning on the project, we wasn't yet allocated the brief, and didn't yet have a strong idea other than the initial empathy brief.  Empathy brief involved us getting into the mind-set of the potential user of the project, which was unknown to us but the only details given, was it was a technology focused fitness helper. 
+		
+	
+		We planned out how we can collect information about the gym, we needed to check one or more gyms out, and see the things which interested us most about it, and how it appealed, where we could improve it with technology based on both the disadvantages and advantages, the group split each gym amongst ourselves, and we worked on getting some information from the on-campus gym, which gave us a close idea of what we wanted to do. We asked for assist from the manager but he replied too late for us to get anything from him, as the empathy brief had finished. 
+		Throughout, we also worked on aspects we had control over, without the main brief for the project being known. We all discussed risks for our risk assessment
+
+		<div class = "mediaimage">
+			<img src="" alt="">
+		</div>
+	
+
     </div>
     </article>
 </div>
-
-
   </div>
 </div>
 
@@ -102,6 +133,6 @@
 </div><!-- End of Container --> 
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>	
